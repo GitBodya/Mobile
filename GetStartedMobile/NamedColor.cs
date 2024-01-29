@@ -14,8 +14,6 @@ namespace GetStartedMobile
         public float Green => Color.Green;
         public float Blue => Color.Blue;
 
-     //   public static IEnumerable<NamedColor> All { get; private set; }
-
         static NamedColor()
         {
             List<NamedColor> all = new List<NamedColor>();
