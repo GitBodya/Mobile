@@ -19,7 +19,7 @@ namespace GetStartedMobile
 
             button.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Views.BindingContextInheritancePage());
+                await Navigation.PushAsync(new Views.ReverseBindingPage());
             };
 
             Content = button;
