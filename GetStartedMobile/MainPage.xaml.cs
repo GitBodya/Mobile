@@ -19,7 +19,7 @@ namespace GetStartedMobile
 
             button.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Views.NestedMultiBindingPage());
+                await Navigation.PushAsync(new Views.PersonEntryPage());
             };
 
             Content = button;

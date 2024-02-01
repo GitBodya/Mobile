@@ -12,6 +12,9 @@
     <MauiXaml Update="Views\NestedMultiBindingPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\PersonEntryPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\RgbColorSelectorPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
