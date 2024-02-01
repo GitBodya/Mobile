@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GetStartedMobile"
+             x:Class="GetStartedMobile.Views.NestedMultiBindingPage"
+             Title="Nested MultiBinding demo">
+
+    <ContentPage.Resources>
+        <local:AllTrueMultiConverter x:Key="AllTrueConverter" />
+        <local:AnyTrueMultiConverter x:Key="AnyTrueConverter" />
+        <local:InverterConverter x:Key="InverterConverter" />
+    </ContentPage.Resources>
+
+    <CheckBox>
+        <CheckBox.IsChecked>
+            <MultiBinding Converter="{StaticResource AnyTrueConverter}">
+                <MultiBinding Converter="{StaticResource AllTrueConverter}">
+                    <Binding Path="Employee.IsOver16" />
+                    <Binding Path="Employee.HasPassedTest" />
+                    <Binding Path="Employee.IsSuspended" Converter="{StaticResource InverterConverter}" />
+                </MultiBinding>
+                <Binding Path="Employee.IsMonarch" />
+            </MultiBinding>
+        </CheckBox.IsChecked>
+    </CheckBox>
+</ContentPage>

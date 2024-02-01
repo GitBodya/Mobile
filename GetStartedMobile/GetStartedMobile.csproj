@@ -69,6 +69,12 @@
 	  <MauiXaml Update="Views\EnableButtonsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\MultiBindingConverterPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NestedMultiBindingPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\RgbColorSelectorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

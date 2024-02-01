@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GetStartedMobile"
+             x:Class="GetStartedMobile.Views.MultiBindingConverterPage"
+             Title="MultiBinding Converter demo">
+
+    <ContentPage.Resources>
+        <local:AllTrueMultiConverter x:Key="AllTrueConverter" />
+        <local:InverterConverter x:Key="InverterConverter" />
+    </ContentPage.Resources>
+
+    <CheckBox>
+        <CheckBox.IsChecked>
+            <MultiBinding Converter="{StaticResource AllTrueConverter}">
+                <Binding Path="Employee.IsOver16" />
+                <Binding Path="Employee.HasPassedTest" />
+                <Binding Path="Employee.IsSuspended"
+                         Converter="{StaticResource InverterConverter}" />
+            </MultiBinding>
+        </CheckBox.IsChecked>
+    </CheckBox>
+</ContentPage>
