@@ -1,6 +1,4 @@
-﻿using GetStartedMobile.Views;
-
-namespace GetStartedMobile
+﻿namespace GetStartedMobile
 {
     public partial class MainPage : ContentPage
     {
