@@ -19,7 +19,7 @@ namespace GetStartedMobile
 
             button.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Views.PersonEntryPage());
+                await Navigation.PushAsync(new CompiledColorSelectorPage());
             };
 
             Content = button;
